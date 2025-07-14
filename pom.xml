@@ -17,5 +17,7 @@
 
     <modules>
         <module>segura-core</module>
+        <module>segura-api</module>
     </modules>
+
 </project>

@@ -6,25 +6,24 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@EqualsAndHashCode
 @Builder
+@Getter
+@ToString
 public class Cliente {
 
-    private UUID id = UUID.randomUUID();
+    private final UUID id = UUID.randomUUID();
 
-    private String nome;
+    private final String nome;
 
-    private String email;
+    private final String email;
 
-    private Documento documento;
+    private final Documento documento;
 
-    private LocalDate dataNascimento;
+    private final LocalDate dataNascimento;
 
-    private String telefone;
+    private final String telefone;
 
-    private List<Endereco> enderecos;
+    private final List<Endereco> enderecos;
 
 }
